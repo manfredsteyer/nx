@@ -9,10 +9,40 @@
   },
   "projects": {
     "flight-workspace-e2e": {
-      "tags": []
+      "tags": ["*"]
     },
     "flight-workspace": {
-      "tags": []
+      "tags": ["type:app"]
+    },
+    "booking-feature-create": {
+      "tags": ["type:feature", "domain:booking"]
+    },
+    "booking-feature-update": {
+      "tags": ["type:feature", "domain:booking"]
+    },
+    "booking-domain": {
+      "tags": ["type:domain", "domain:booking"]
+    },
+    "booking-ui": {
+      "tags": ["type:ui", "domain:booking"]
+    },
+    "booking-util": {
+      "tags": ["type:util", "domain:booking"]
+    },
+    "boarding-feature-start": {
+      "tags": ["type:feature", "domain:boarding", "name:boarding-feature-start"]
+    },
+    "shared-util-auth": {
+      "tags": ["type:util", "domain:shared"]
+    },
+    "shared-ui-address": {
+      "tags": ["type:ui", "domain:shared"]
+    },
+    "boarding-domain": {
+      "tags": ["type:domain", "domain:boarding"]
+    },
+    "booking-api": {
+      "tags": ["type:api", "domain:booking", "domain:booking/api", "name:booking-api"]
     }
   }
 }

@@ -3,6 +3,7 @@ import { chain, externalSchematic, Rule } from '@angular-devkit/schematics';
 export default function(schema: any): Rule {
 
   return chain([
+    // ng g lib feature-create --directory booking --defaults --tags
     externalSchematic('@nrwl/workspace', 'lib', {
       name: 'feature-create',
       directory: schema.name,

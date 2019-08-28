@@ -56,9 +56,35 @@
         "allow": [],
         "depConstraints": [
           {
-            "sourceTag": "*",
-            "onlyDependOnLibsWithTags": ["*"]
+            "sourceTag": "domain:booking",
+            "onlyDependOnLibsWithTags": ["domain:booking", "domain:shared"]
+          },
+          {
+            "sourceTag": "domain:boarding",
+            "onlyDependOnLibsWithTags": ["domain:boarding", "domain:booking/api", "domain:shared"]
+          },
+          {
+            "sourceTag": "domain:shared",
+            "onlyDependOnLibsWithTags": ["domain:shared"]
+          },
+
+          {
+            "sourceTag": "type:app",
+            "onlyDependOnLibsWithTags": ["type:feature"]
+          },
+          {
+            "sourceTag": "type:feature",
+            "onlyDependOnLibsWithTags": ["type:api", "type:util", "type:domain", "type:ui"]
+          },
+          {
+            "sourceTag": "type:domain",
+            "onlyDependOnLibsWithTags": ["type:util"]
+          },
+          {
+            "sourceTag": "type:util",
+            "onlyDependOnLibsWithTags": ["type:util"]
           }
+
         ]
       }
     ],

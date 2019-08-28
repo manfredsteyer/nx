@@ -42,13 +42,13 @@
     "@nrwl/angular": "8.1.2"
   },
   "devDependencies": {
+    "jest-preset-angular": "7.0.0",
     "cypress": "~3.3.1",
     "@nrwl/cypress": "8.1.2",
     "@nrwl/jest": "8.1.2",
     "jest": "24.1.0",
     "@types/jest": "24.0.9",
     "ts-jest": "24.0.0",
-    "jest-preset-angular": "7.0.0",
     "@angular/compiler-cli": "^8.0.0",
     "@angular/language-service": "^8.0.0",
     "@angular-devkit/build-angular": "^0.800.0",

@@ -15,7 +15,30 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@flight-workspace/booking/feature-create": [
+        "libs/booking/feature-create/src/index.ts"
+      ],
+      "@flight-workspace/booking/feature-update": [
+        "libs/booking/feature-update/src/index.ts"
+      ],
+      "@flight-workspace/booking/domain": ["libs/booking/domain/src/index.ts"],
+      "@flight-workspace/booking/ui": ["libs/booking/ui/src/index.ts"],
+      "@flight-workspace/booking/util": ["libs/booking/util/src/index.ts"],
+      "@flight-workspace/boarding/feature-start": [
+        "libs/boarding/feature-start/src/index.ts"
+      ],
+      "@flight-workspace/shared/util-auth": [
+        "libs/shared/util-auth/src/index.ts"
+      ],
+      "@flight-workspace/shared/ui-address": [
+        "libs/shared/ui-address/src/index.ts"
+      ],
+      "@flight-workspace/boarding/domain": [
+        "libs/boarding/domain/src/index.ts"
+      ],
+      "@flight-workspace/booking/api": ["libs/booking/api/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

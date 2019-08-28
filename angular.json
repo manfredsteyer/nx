@@ -118,6 +118,276 @@
           }
         }
       }
+    },
+    "booking-feature-create": {
+      "projectType": "library",
+      "root": "libs/booking/feature-create",
+      "sourceRoot": "libs/booking/feature-create/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/feature-create/tsconfig.lib.json",
+              "libs/booking/feature-create/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/feature-create/jest.config.js",
+            "tsConfig": "libs/booking/feature-create/tsconfig.spec.json",
+            "setupFile": "libs/booking/feature-create/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "booking-feature-update": {
+      "projectType": "library",
+      "root": "libs/booking/feature-update",
+      "sourceRoot": "libs/booking/feature-update/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/feature-update/tsconfig.lib.json",
+              "libs/booking/feature-update/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/feature-update/jest.config.js",
+            "tsConfig": "libs/booking/feature-update/tsconfig.spec.json",
+            "setupFile": "libs/booking/feature-update/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "booking-domain": {
+      "projectType": "library",
+      "root": "libs/booking/domain",
+      "sourceRoot": "libs/booking/domain/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/domain/tsconfig.lib.json",
+              "libs/booking/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/domain/jest.config.js",
+            "tsConfig": "libs/booking/domain/tsconfig.spec.json",
+            "setupFile": "libs/booking/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "booking-ui": {
+      "projectType": "library",
+      "root": "libs/booking/ui",
+      "sourceRoot": "libs/booking/ui/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/ui/tsconfig.lib.json",
+              "libs/booking/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/ui/jest.config.js",
+            "tsConfig": "libs/booking/ui/tsconfig.spec.json",
+            "setupFile": "libs/booking/ui/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "booking-util": {
+      "projectType": "library",
+      "root": "libs/booking/util",
+      "sourceRoot": "libs/booking/util/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/util/tsconfig.lib.json",
+              "libs/booking/util/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/util/jest.config.js",
+            "tsConfig": "libs/booking/util/tsconfig.spec.json",
+            "setupFile": "libs/booking/util/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "boarding-feature-start": {
+      "projectType": "library",
+      "root": "libs/boarding/feature-start",
+      "sourceRoot": "libs/boarding/feature-start/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/boarding/feature-start/tsconfig.lib.json",
+              "libs/boarding/feature-start/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/boarding/feature-start/jest.config.js",
+            "tsConfig": "libs/boarding/feature-start/tsconfig.spec.json",
+            "setupFile": "libs/boarding/feature-start/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-util-auth": {
+      "projectType": "library",
+      "root": "libs/shared/util-auth",
+      "sourceRoot": "libs/shared/util-auth/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/util-auth/tsconfig.lib.json",
+              "libs/shared/util-auth/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/util-auth/jest.config.js",
+            "tsConfig": "libs/shared/util-auth/tsconfig.spec.json",
+            "setupFile": "libs/shared/util-auth/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "shared-ui-address": {
+      "projectType": "library",
+      "root": "libs/shared/ui-address",
+      "sourceRoot": "libs/shared/ui-address/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/shared/ui-address/tsconfig.lib.json",
+              "libs/shared/ui-address/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/shared/ui-address/jest.config.js",
+            "tsConfig": "libs/shared/ui-address/tsconfig.spec.json",
+            "setupFile": "libs/shared/ui-address/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "boarding-domain": {
+      "projectType": "library",
+      "root": "libs/boarding/domain",
+      "sourceRoot": "libs/boarding/domain/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/boarding/domain/tsconfig.lib.json",
+              "libs/boarding/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/boarding/domain/jest.config.js",
+            "tsConfig": "libs/boarding/domain/tsconfig.spec.json",
+            "setupFile": "libs/boarding/domain/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "booking-api": {
+      "projectType": "library",
+      "root": "libs/booking/api",
+      "sourceRoot": "libs/booking/api/src",
+      "prefix": "flight-workspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/booking/api/tsconfig.lib.json",
+              "libs/booking/api/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/booking/api/jest.config.js",
+            "tsConfig": "libs/booking/api/tsconfig.spec.json",
+            "setupFile": "libs/booking/api/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {
