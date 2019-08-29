@@ -7,3 +7,4 @@ import { SharedUtilAuthModule } from '@flight-workspace/shared/util-auth';
   imports: [CommonModule, BookingUtilModule, SharedUtilAuthModule]
 })
 export class BookingDomainModule {}
+
